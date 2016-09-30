@@ -748,8 +748,6 @@ public class InstructorFeedbackEditPageUiTest extends BaseUiTestCase {
         feedbackEditPage.selectGiverToBe(FeedbackParticipantType.STUDENTS, 1);
         feedbackEditPage.selectRecipientToBe(FeedbackParticipantType.STUDENTS, 1);
 
-        feedbackEditPage.clickResponseVisibilityCheckBox("RECEIVER_TEAM_MEMBERS", 1);
-
         assertTrue("Expected checkbox to be checked",
                 feedbackEditPage.isCheckboxChecked("answerCheckbox", "RECEIVER_TEAM_MEMBERS", 1));
         feedbackEditPage.selectRecipientToBe(FeedbackParticipantType.OWN_TEAM, 1);
